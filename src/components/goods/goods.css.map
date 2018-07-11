@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAaA,MAAM;EACJ,KAAK,EAAE,IAAI;EACX,UAAU,EAAE,MAAM;EAGlB,uBAAgB;IACd,SAAS,EAAC,OAAO;IAlBnB,UAAU,EAmBM,MAAM;IAlBtB,YAAY,EAFG,CAAC;IAGhB,aAAa,EAiBa,MAAM;IAhBhC,WAAW,EAJc,CAAC;EAsB1B,uBAAgB;IACd,SAAS,EAAC,OAAO;IACjB,KAAK,EAAE,GAAG",
+"sources": ["goods.scss"],
+"names": [],
+"file": "goods.css"
+}

@@ -1,0 +1,92 @@
+@mixin m($t:0,$r:0,$b:0,$l:0) {
+  margin-top: $t;
+  margin-right: $r;
+  margin-bottom: $b;
+  margin-left: $l;
+}
+
+@mixin p($t:0,$r:0,$b:0,$l:0) {
+  padding-top: $t;
+  padding-right: $r;
+  padding-bottom: $b;
+  padding-left: $l;
+}
+
+.Login{
+  background-color:#c17bba ;
+  height: 100vh;
+  .password{
+    color: whitesmoke;
+    font-size:12px;
+    position: relative;
+    left: 70%;
+  }
+  .Login_1{
+    @include m($t:2rem);
+    position: relative;
+    .Login_1_2{
+      color: white;
+      font-size:12px;
+      position: absolute;
+      top: -6px;
+      text-align: center;
+      width: 30%;
+      left: 35%;
+      z-index: 2;
+      background-color: #c17bba;
+    }
+  }
+
+  .line{
+    width: 50%;
+    position: relative;
+    left: 25%;
+    height: 1px;
+    background-color: beige;
+  }
+  .regist{
+    position: relative;
+    .get_code{
+      position: absolute;
+      width: 26%;
+      z-index: 2;
+      top: 0.34rem;
+      font-size:12px;
+      height: 1rem;
+      right: 12%;
+      background-color: #ce72d7 !important;
+      color: #ffbcff;
+    }
+  }
+}
+.lijidenglu{
+  width:80%;
+  position: relative;
+  left: 10%;
+  @include p($l:0,$r:0);
+  height: 2.2rem;;
+  line-height: 2.2rem;
+  font-size:12px;
+  @include m($t:1.2rem,$b:1.2rem)
+}
+
+.teldenlgu{
+  @extend .lijidenglu;
+  color: honeydew;
+  background-color: #cf73d8;
+}
+
+.inputs{
+  height: 2.2rem !important;
+  font-size:12px !important;
+  @include m($t:1.2rem,$b:1.2rem);
+  color: #fad0ff;
+
+}
+
+.login_img_1{
+  display: flex;
+  justify-content: center;
+  @include p($t:3rem,$b:3rem);
+
+}

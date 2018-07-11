@@ -1,0 +1,20 @@
+.zuopin{
+  .zuopin_2{
+    display: flex;
+    div{
+      flex-grow: 1;
+      text-align: center;
+      line-height: 2.6rem;
+    }
+  }
+.changecolor{
+  color: #666;
+  background-color: white;
+}
+.changecolor2{
+  background-color: #cf73d8;
+  border: 1px solid #cf73d8;
+  color: white;
+}
+
+}

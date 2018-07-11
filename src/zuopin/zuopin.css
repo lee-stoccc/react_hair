@@ -1,0 +1,15 @@
+.zuopin .zuopin_2 {
+  display: flex; }
+  .zuopin .zuopin_2 div {
+    flex-grow: 1;
+    text-align: center;
+    line-height: 2.6rem; }
+.zuopin .changecolor {
+  color: #666;
+  background-color: white; }
+.zuopin .changecolor2 {
+  background-color: #cf73d8;
+  border: 1px solid #cf73d8;
+  color: white; }
+
+/*# sourceMappingURL=zuopin.css.map */

@@ -1,0 +1,81 @@
+.Login {
+  background-color: #c17bba;
+  height: 100vh; }
+  .Login .password {
+    color: whitesmoke;
+    font-size: 12px;
+    position: relative;
+    left: 70%; }
+  .Login .Login_1 {
+    margin-top: 2rem;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    position: relative; }
+    .Login .Login_1 .Login_1_2 {
+      color: white;
+      font-size: 12px;
+      position: absolute;
+      top: -6px;
+      text-align: center;
+      width: 30%;
+      left: 35%;
+      z-index: 2;
+      background-color: #c17bba; }
+  .Login .line {
+    width: 50%;
+    position: relative;
+    left: 25%;
+    height: 1px;
+    background-color: beige; }
+  .Login .regist {
+    position: relative; }
+    .Login .regist .get_code {
+      position: absolute;
+      width: 26%;
+      z-index: 2;
+      top: 0.34rem;
+      font-size: 12px;
+      height: 1rem;
+      right: 12%;
+      background-color: #ce72d7 !important;
+      color: #ffbcff; }
+
+.lijidenglu, .teldenlgu {
+  width: 80%;
+  position: relative;
+  left: 10%;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  height: 2.2rem;
+  line-height: 2.2rem;
+  font-size: 12px;
+  margin-top: 1.2rem;
+  margin-right: 0;
+  margin-bottom: 1.2rem;
+  margin-left: 0; }
+
+.teldenlgu {
+  color: honeydew;
+  background-color: #cf73d8; }
+
+.inputs {
+  height: 2.2rem !important;
+  font-size: 12px !important;
+  margin-top: 1.2rem;
+  margin-right: 0;
+  margin-bottom: 1.2rem;
+  margin-left: 0;
+  color: #fad0ff; }
+
+.login_img_1 {
+  display: flex;
+  justify-content: center;
+  padding-top: 3rem;
+  padding-right: 0;
+  padding-bottom: 3rem;
+  padding-left: 0; }
+
+/*# sourceMappingURL=regist.css.map */

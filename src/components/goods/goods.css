@@ -1,0 +1,14 @@
+.goods {
+  width: 100%;
+  text-align: center; }
+  .goods div:nth-child(2) {
+    font-size: 0.75rem;
+    margin-top: 0.4rem;
+    margin-right: 0;
+    margin-bottom: 0.4rem;
+    margin-left: 0; }
+  .goods div:nth-child(3) {
+    font-size: 0.75rem;
+    color: red; }
+
+/*# sourceMappingURL=goods.css.map */

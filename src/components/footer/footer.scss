@@ -1,0 +1,25 @@
+@mixin m($t:0,$r:0,$b:0,$l:0) {
+  margin-top: $t;
+  margin-right: $r;
+  margin-bottom: $b;
+  margin-left: $l;
+}
+
+@mixin p($t:0,$r:0,$b:0,$l:0) {
+  padding-top: $t;
+  padding-right: $r;
+  padding-bottom: $b;
+  padding-left: $l;
+}
+.footer{
+  display: flex;
+  text-align: center;
+  margin-top: 0.4rem;
+  justify-content: space-around;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  @include p($b:0.2rem);
+  z-index: 2;
+  background-color: white;
+}

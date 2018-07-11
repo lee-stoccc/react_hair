@@ -1,0 +1,75 @@
+
+@mixin m($t:0,$r:0,$b:0,$l:0) {
+  margin-top: $t;
+  margin-right: $r;
+  margin-bottom: $b;
+  margin-left: $l;
+}
+
+@mixin p($t:0,$r:0,$b:0,$l:0) {
+  padding-top: $t;
+  padding-right: $r;
+  padding-bottom: $b;
+  padding-left: $l;
+}
+
+.mine{
+  .login_img_1{
+    display: flex;
+    justify-content: center;
+    @include p($t:2rem);
+
+  }
+  .mine_1{
+    display: flex;
+    @include p($b:1rem);
+    justify-content: center;
+    align-items: center;
+    div:nth-child(1){
+      @include m($l:10%);
+    }
+    .button_1{
+      width: 10%;
+      @include p($t:0rem,$b:0rem);
+      font-size:10px;
+      @include m($l:0.3rem,$t:4px)
+    }
+  }
+  .mine_line{
+    width: 100%;
+    height: 1px;
+    background-color: #eee;
+    @include m($t:0.4rem,$b:0.4rem)
+  }
+  .text_2{
+    font-size:14px;
+  }
+
+  .mine_3{
+    display: flex;
+    >div{
+      flex-grow: 1;
+      margin: 0 auto;
+    }
+  }
+  .mine_order{
+    font-size:0.7rem;
+    background-color: white;
+    width: 96%;
+    position: relative;
+    height: 6.8rem;
+    left: 2%;
+    top:0.65rem;
+    border-radius: 6px;
+    .mine_2{
+      @include p($t:0.6rem,$l:0.6rem,$r:0.6rem);
+      display: flex;
+      div:nth-child(1){
+        flex-grow: 1;
+      }
+    }
+    .mine_order_2{
+      color: #999;
+    }
+  }
+}

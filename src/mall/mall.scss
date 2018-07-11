@@ -1,0 +1,56 @@
+@mixin m($t:0,$r:0,$b:0,$l:0) {
+  margin-top: $t;
+  margin-right: $r;
+  margin-bottom: $b;
+  margin-left: $l;
+}
+
+@mixin p($t:0,$r:0,$b:0,$l:0) {
+  padding-top: $t;
+  padding-right: $r;
+  padding-bottom: $b;
+  padding-left: $l;
+}
+.index_chodis{
+  display: flex;
+  text-align: center;
+  margin-top: 0.4rem;
+  justify-content: space-around;
+  @include m($t:1rem,$b:1rem);
+
+}
+
+  .Login_1{
+    @include m($t:2rem);
+    position: relative;
+    .Login_1_2{
+      background-color: white;
+      font-size:16px;
+      position: absolute;
+      top: -8px;
+      text-align: center;
+      width: 28%;
+      left: 36%;
+      z-index: 2;
+      color: #c17bba;
+    }
+  }
+
+  .line{
+    width: 40%;
+    position: relative;
+    left: 30%;
+    height: 1px;
+    background-color: #c17bba;
+  }
+.mall_goods{
+  display: flex;
+  flex-wrap: wrap;
+  @include m($t:0.8rem,$b:0.8rem);
+  >div{
+    width: 50%;
+  }
+
+
+
+}

@@ -1,0 +1,23 @@
+@mixin m($t:0,$r:0,$b:0,$l:0) {
+  margin-top: $t;
+  margin-right: $r;
+  margin-bottom: $b;
+  margin-left: $l;
+}
+
+@mixin p($t:0,$r:0,$b:0,$l:0) {
+  padding-top: $t;
+  padding-right: $r;
+  padding-bottom: $b;
+  padding-left: $l;
+}
+
+
+.order{
+  color: aliceblue;
+  background-color: #cf73d8;
+  @include p(0.25rem,0rem,0.25rem,0rem);
+  text-align: center;
+  border-radius: 20px;
+
+}

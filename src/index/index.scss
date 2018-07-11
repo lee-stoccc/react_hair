@@ -1,0 +1,82 @@
+@mixin m($t:0,$r:0,$b:0,$l:0) {
+  margin-top: $t;
+  margin-right: $r;
+  margin-bottom: $b;
+  margin-left: $l;
+}
+
+@mixin p($t:0,$r:0,$b:0,$l:0) {
+  padding-top: $t;
+  padding-right: $r;
+  padding-bottom: $b;
+  padding-left: $l;
+}
+
+
+
+.color{
+  color:bisque;
+  font-size:26px;
+}
+.index_chodis{
+  display: flex;
+  text-align: center;
+  margin-top: 0.4rem;
+  justify-content: space-around;
+  @include m($t:1rem,$b:1rem);
+
+}
+
+.index_chodis>div{
+  width: 13%;
+}
+.top_search{
+  @include p($t:0.3rem,$b:0.4rem);
+  background-color:#cf73d8 ;
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  justify-content: space-between;
+  .t_s_1{
+    width: 1.6rem;
+    height: 1.6rem;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+    @include m($l:0.4rem,$r:0.4rem)
+  }
+  .t_s_2{
+    @extend .t_s_1
+  }
+  .t_s_3{
+    flex-grow: 1;
+    input{
+      width: 100%;
+      text-align: center;
+      border-left-width: 0;
+      border-top-width: 0;
+      border-right-width: 0;
+      background-color: #cf73d8;
+      padding-bottom: 4px;
+      border-bottom-width: 1px;
+    }
+    input::-webkit-input-placeholder{
+      color: white;
+      font-size:14px;
+    }
+  }
+}
+
+.index_1{
+  position: relative;
+  @include m($t:1rem,$b:1rem);
+  .index_yuyue{
+    width:3.4rem;
+    position: absolute;
+    top: 30px;
+    right: 2.4rem;
+    z-index: 2;
+    justify-content: center;
+  }
+}
