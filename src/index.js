@@ -11,6 +11,7 @@ import Regist from './regist/Regist'
 import Mine from './mine/Mine'
 import Mall from './mall/Mall'
 import Zuopin from './zuopin/Zuopin'
+import Gooddetail from './gooddetail/Gooddetail'
 
 import ST from './components/goods/Goods'
 
@@ -47,7 +48,8 @@ React.Component.prototype.dis={
 React.Component.prototype.show={
     display:''
 };
-
+React.Component.prototype.UID=1
+React.Component.prototype.CID=1
 
 ReactDOM.render(
     <Router>
@@ -60,6 +62,7 @@ ReactDOM.render(
             <Route path='/mine' component={Mine}  />
             <Route path='/mall' component={Mall}  />
             <Route path='/zuopin' component={Zuopin}  />
+            <Route path='/Gooddetail' component={Gooddetail}  />
         </Switch>
 
     </Router>,

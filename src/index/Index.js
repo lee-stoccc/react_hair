@@ -21,7 +21,7 @@ class Index extends React.Component {
        this.$axios({
            method:'get',
            url:'/index/Hairindexc/index',
-           params:{cid:1}
+           params:{cid:this.__proto__.__proto__.CID}
        }).then(function (res) {
            t.setState({
                indexInfo:res.data,
@@ -34,13 +34,34 @@ class Index extends React.Component {
         this.$axios({
             method:'get',
             url:'/index/Hairshopc/shoplist',
-            params:{cid:1}
+            params:{cid:this.__proto__.__proto__.CID}
         }).then(function (res) {
            t.setState({
                shoplist:res.data
            })
         })
+    };
 
+    // 关注
+    addcarenum(shopid,shopcarenum,event){
+        var t=this;
+        this.$axios({
+            url:'/index/Hairshopc/saveusecareshop',
+            params:{cid:t.CID,uid:t.UID,shopid:shopid},
+            method:'get'
+        }).then(function (res) {
+            if(res.data.msg===true){
+                let data=Object.assign(t.state.shoplist[shopid-1],{shopcarenum:shopcarenum+1},{uid:1});
+                t.setState({
+                    datas:data
+                })
+            }else {
+                let data=Object.assign(t.state.shoplist[shopid-1],{shopcarenum:shopcarenum-1},{uid:-9999});
+                t.setState({
+                    datas:data
+                })
+            }
+        })
     };
 
     render() {
@@ -64,14 +85,16 @@ class Index extends React.Component {
                 <div style={marbottom}>
                     {
                         this.state.shoplist.map((l,key)=>{
-                            return  <div className='index_1' key={key}>
+                            return  <div className='index_1' key={key} id={l.shopid}>
                                 <Buttom button='预约' button_1='index_yuyue'/>
-                                <Shop_template shopname={l.shopname} shopcarenum={l.shopcarenum} />
+                                <Shop_template shopname={l.shopname} shopcarenum={l.shopcarenum}
+                                               iscare={l.uid===1?true:false}
+                                               addcarenumf={this.addcarenum.bind(this,l.shopid,l.shopcarenum)} />
                             </div>
                         })
                     }
                     </div>
-                <Foot />
+                <Foot isindex={true}/>
             </div>
         );
     }

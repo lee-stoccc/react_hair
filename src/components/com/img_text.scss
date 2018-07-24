@@ -1,5 +1,6 @@
 
 .img_text{
+  position: relative;
   width: 20% !important;
   .icon img{
     width: 100%;
@@ -15,5 +16,11 @@
     width: 2rem;
     height: 2rem;
     margin: 0 auto;
+  }
+  .num{
+    text-align: right;
+    position: absolute;
+    right: 0px;
+    color: #cf73d8;
   }
 }

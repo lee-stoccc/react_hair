@@ -1,0 +1,117 @@
+@mixin m($t:0,$r:0,$b:0,$l:0) {
+  margin-top: $t;
+  margin-right: $r;
+  margin-bottom: $b;
+  margin-left: $l;
+}
+
+@mixin p($t:0,$r:0,$b:0,$l:0) {
+  padding-top: $t;
+  padding-right: $r;
+  padding-bottom: $b;
+  padding-left: $l;
+}
+
+.gooddetail_goodsname{
+  @include m($t:0.4rem,$b:0.4rem);
+  width: 90%;
+  position: relative;
+  left: 5%;
+  display: flex;
+  font-size:1.2rem;
+  color: #ffb3b3;
+  div:nth-child(1){
+    flex-grow: 1;
+    color: #222222;
+  }
+
+}
+.gooddetail_goodsname2{
+  @extend .gooddetail_goodsname;
+  color: #8c8c8c;
+  font-size:0.9rem;
+  div:nth-child(1){
+    color: #8c8c8c;
+  }
+}
+.gooddetail_line{
+  width: 100%;
+  height: 1px;
+  background-color: #eee;
+  @include m($t:0.4rem,$b:0.4rem)
+}
+.gooddetail_guige{
+  line-height: 2rem;
+  height:2rem;
+  @extend .gooddetail_goodsname2;
+  p:nth-child(1){
+    flex-grow: 1;
+  }
+  div:nth-child(2){
+    width: 2rem;
+    height: 2rem;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+.gooddetail_pinjia{
+  line-height: 2rem;
+  @extend .gooddetail_goodsname2;
+  div:nth-child(1){
+    flex-grow:1;
+    color: #222;
+  }
+  div:nth-child(3){
+    width: 2rem;;
+    height: 2rem;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+.gooddetail_pinjia1{
+  width: 90%;
+  position: relative;
+  left: 5%;
+  display: flex;
+  div:nth-child(1){
+    width: 3rem;
+    height: 3rem;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  div:nth-child(2){
+    line-height: 3rem;
+    color: #8c8c8c;
+    @include m($l:0.6rem)
+  }
+}
+.gooddetail_pinjia2{
+  position: relative;
+  width: 90%;
+  left: 5%;
+  color: #8c8c8c;
+  @include m($t:0.8rem);
+  font-size:0.8rem;
+}
+.gooddetail_line1{
+  @extend .gooddetail_line;
+  height: 4px;
+  @include m($t:1rem)
+}
+.gooddetail_text{
+  width: 40%;
+  position: relative;
+  left: 30%;
+  color: #cf73d8;
+  text-align: center;
+  font-size:1.2rem;
+  @include m($t:0.6rem);
+  border-bottom: solid 1px #cf73d8;
+  line-height: 2.4rem;
+}

@@ -9,8 +9,22 @@ import './mine.css'
 class Index extends React.Component {
     state={
         imgsrc:[require('../staic/imgs/2-1.png'),require('../staic/imgs/2-2.png')],
+        ordstatus_0:''
     };
 
+    componentWillMount(){
+        let t=this;
+        // 获取代付款的数量
+        this.$axios({
+            url:'/index/Hairorderc/ordstatus_0',
+            params:{cid:t.CID,uid:t.UID,status:0},
+            method:'get'
+        }).then(function (res) {
+           t.setState({
+               ordstatus_0:res.data.num
+           })
+        })
+    }
 
     render() {
         const bg={
@@ -34,7 +48,7 @@ class Index extends React.Component {
                         </div>
                         <div className='mine_line'></div>
                         <div  className='mine_3'>
-                            <Img_text imgtext='待付款' imgsrc={this.state.imgsrc[0]}/>
+                            <Img_text imgtext='待付款' imgsrc={this.state.imgsrc[0]} num={this.state.ordstatus_0}/>
                             <Img_text imgtext='待收货' imgsrc={this.state.imgsrc[0]}/>
                             <Img_text imgtext='待发货' imgsrc={this.state.imgsrc[0]}/>
                             <Img_text imgtext='待评价' imgsrc={this.state.imgsrc[0]}/>
@@ -54,7 +68,7 @@ class Index extends React.Component {
                     <Img_text2 img_text2='商家认证/管理' text_2='text_2'/>
                     <div className='mine_line'></div>
                 </div>
-                <Foot></Foot>
+                <Foot ismine={true}/>
             </div>
         );
     }

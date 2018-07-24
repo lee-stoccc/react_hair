@@ -31,7 +31,7 @@ class Login extends Component {
                     <div data-change_num='4'  onClick={this.change.bind(this)} className={[this.state.change_num==4? "changecolor":'changecolor2',''].join(' ')}>美甲</div>
                 </div>
                 <Goods/>
-                <Foot/>
+                <Foot iszuopin={true}/>
             </div>
         );
     }

@@ -15,6 +15,7 @@ export default class Img_text extends React.Component {
         return (
             <div className='img_text'  >
                 <Link to={goPaths}  >
+                    <div className={'num'}>{this.props.num}</div>
                     <div className='icon'><img src={this.props.imgsrc} alt=""/></div>
                     <div className={classn.join(' ')}>{this.props.imgtext}</div>
                 </Link>

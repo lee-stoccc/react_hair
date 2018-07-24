@@ -1,0 +1,106 @@
+.gooddetail_goodsname, .gooddetail_goodsname2, .gooddetail_guige, .gooddetail_pinjia {
+  margin-top: 0.4rem;
+  margin-right: 0;
+  margin-bottom: 0.4rem;
+  margin-left: 0;
+  width: 90%;
+  position: relative;
+  left: 5%;
+  display: flex;
+  font-size: 1.2rem;
+  color: #ffb3b3; }
+  .gooddetail_goodsname div:nth-child(1), .gooddetail_goodsname2 div:nth-child(1), .gooddetail_guige div:nth-child(1), .gooddetail_pinjia div:nth-child(1) {
+    flex-grow: 1;
+    color: #222222; }
+
+.gooddetail_goodsname2, .gooddetail_guige, .gooddetail_pinjia {
+  color: #8c8c8c;
+  font-size: 0.9rem; }
+  .gooddetail_goodsname2 div:nth-child(1), .gooddetail_guige div:nth-child(1), .gooddetail_pinjia div:nth-child(1) {
+    color: #8c8c8c; }
+
+.gooddetail_line, .gooddetail_line1 {
+  width: 100%;
+  height: 1px;
+  background-color: #eee;
+  margin-top: 0.4rem;
+  margin-right: 0;
+  margin-bottom: 0.4rem;
+  margin-left: 0; }
+
+.gooddetail_guige {
+  line-height: 2rem;
+  height: 2rem; }
+  .gooddetail_guige p:nth-child(1) {
+    flex-grow: 1; }
+  .gooddetail_guige div:nth-child(2) {
+    width: 2rem;
+    height: 2rem; }
+    .gooddetail_guige div:nth-child(2) img {
+      width: 100%;
+      height: 100%; }
+
+.gooddetail_pinjia {
+  line-height: 2rem; }
+  .gooddetail_pinjia div:nth-child(1) {
+    flex-grow: 1;
+    color: #222; }
+  .gooddetail_pinjia div:nth-child(3) {
+    width: 2rem;
+    height: 2rem; }
+    .gooddetail_pinjia div:nth-child(3) img {
+      width: 100%;
+      height: 100%; }
+
+.gooddetail_pinjia1 {
+  width: 90%;
+  position: relative;
+  left: 5%;
+  display: flex; }
+  .gooddetail_pinjia1 div:nth-child(1) {
+    width: 3rem;
+    height: 3rem; }
+    .gooddetail_pinjia1 div:nth-child(1) img {
+      width: 100%;
+      height: 100%; }
+  .gooddetail_pinjia1 div:nth-child(2) {
+    line-height: 3rem;
+    color: #8c8c8c;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0.6rem; }
+
+.gooddetail_pinjia2 {
+  position: relative;
+  width: 90%;
+  left: 5%;
+  color: #8c8c8c;
+  margin-top: 0.8rem;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  font-size: 0.8rem; }
+
+.gooddetail_line1 {
+  height: 4px;
+  margin-top: 1rem;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0; }
+
+.gooddetail_text {
+  width: 40%;
+  position: relative;
+  left: 30%;
+  color: #cf73d8;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 0.6rem;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  border-bottom: solid 1px #cf73d8;
+  line-height: 2.4rem; }
+
+/*# sourceMappingURL=gooddetail.css.map */
