@@ -8,7 +8,7 @@ class Buttom extends React.Component {
         const button_1=['order'];
         button_1.push(this.props.button_1);
         return (
-                    <div className={button_1.join(" ")}> {this.props.button}</div>
+                    <div className={button_1.join(" ")} onClick={this.props.Buttom_func}> {this.props.button}</div>
         );
     }
 }

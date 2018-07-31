@@ -11,13 +11,15 @@ import Regist from './regist/Regist'
 import Mine from './mine/Mine'
 import Mall from './mall/Mall'
 import Zuopin from './zuopin/Zuopin'
+import Shopdetail from './shopdetail/Shopdetail'
 import Gooddetail from './gooddetail/Gooddetail'
 
-import ST from './components/goods/Goods'
+import ST from './components/alert/Alert'
 
 
 React.Component.prototype.$axios=axios;
 axios.defaults.baseURL = 'http://localhost/tp5/public/index.php';
+// axios.defaults.baseURL = 'http://119.23.241.137:8080/tp5/public/index.php';
 axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';
 
 // React的Component方法 的 原型对象上添加方法
@@ -63,6 +65,7 @@ ReactDOM.render(
             <Route path='/mall' component={Mall}  />
             <Route path='/zuopin' component={Zuopin}  />
             <Route path='/Gooddetail' component={Gooddetail}  />
+            <Route path='/Shopdetail/:id/:cid' component={Shopdetail}  />
         </Switch>
 
     </Router>,

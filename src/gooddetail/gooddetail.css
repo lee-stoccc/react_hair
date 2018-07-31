@@ -9,14 +9,14 @@
   display: flex;
   font-size: 1.2rem;
   color: #ffb3b3; }
-  .gooddetail_goodsname div:nth-child(1), .gooddetail_goodsname2 div:nth-child(1), .gooddetail_guige div:nth-child(1), .gooddetail_pinjia div:nth-child(1) {
+  .gooddetail_goodsname div:nth-child(1), .gooddetail_goodsname2 div:nth-child(1), .gooddetail_guige div:nth-child(1), .gooddetail_pinjia div:nth-child(1), .gooddetail_goodsname .gooddetail_footer .gooddetail_footer_1 div:nth-child(2), .gooddetail_footer .gooddetail_footer_1 .gooddetail_goodsname div:nth-child(2), .gooddetail_goodsname2 .gooddetail_footer .gooddetail_footer_1 div:nth-child(2), .gooddetail_footer .gooddetail_footer_1 .gooddetail_goodsname2 div:nth-child(2), .gooddetail_guige .gooddetail_footer .gooddetail_footer_1 div:nth-child(2), .gooddetail_footer .gooddetail_footer_1 .gooddetail_guige div:nth-child(2), .gooddetail_pinjia .gooddetail_footer .gooddetail_footer_1 div:nth-child(2), .gooddetail_footer .gooddetail_footer_1 .gooddetail_pinjia div:nth-child(2) {
     flex-grow: 1;
     color: #222222; }
 
 .gooddetail_goodsname2, .gooddetail_guige, .gooddetail_pinjia {
   color: #8c8c8c;
   font-size: 0.9rem; }
-  .gooddetail_goodsname2 div:nth-child(1), .gooddetail_guige div:nth-child(1), .gooddetail_pinjia div:nth-child(1) {
+  .gooddetail_goodsname2 div:nth-child(1), .gooddetail_guige div:nth-child(1), .gooddetail_pinjia div:nth-child(1), .gooddetail_goodsname2 .gooddetail_footer .gooddetail_footer_1 div:nth-child(2), .gooddetail_footer .gooddetail_footer_1 .gooddetail_goodsname2 div:nth-child(2), .gooddetail_guige .gooddetail_footer .gooddetail_footer_1 div:nth-child(2), .gooddetail_footer .gooddetail_footer_1 .gooddetail_guige div:nth-child(2), .gooddetail_pinjia .gooddetail_footer .gooddetail_footer_1 div:nth-child(2), .gooddetail_footer .gooddetail_footer_1 .gooddetail_pinjia div:nth-child(2) {
     color: #8c8c8c; }
 
 .gooddetail_line, .gooddetail_line1 {
@@ -42,7 +42,7 @@
 
 .gooddetail_pinjia {
   line-height: 2rem; }
-  .gooddetail_pinjia div:nth-child(1) {
+  .gooddetail_pinjia div:nth-child(1), .gooddetail_pinjia .gooddetail_footer .gooddetail_footer_1 div:nth-child(2), .gooddetail_footer .gooddetail_footer_1 .gooddetail_pinjia div:nth-child(2) {
     flex-grow: 1;
     color: #222; }
   .gooddetail_pinjia div:nth-child(3) {
@@ -57,10 +57,10 @@
   position: relative;
   left: 5%;
   display: flex; }
-  .gooddetail_pinjia1 div:nth-child(1) {
+  .gooddetail_pinjia1 div:nth-child(1), .gooddetail_pinjia1 .gooddetail_footer .gooddetail_footer_1 div:nth-child(2), .gooddetail_footer .gooddetail_footer_1 .gooddetail_pinjia1 div:nth-child(2) {
     width: 3rem;
     height: 3rem; }
-    .gooddetail_pinjia1 div:nth-child(1) img {
+    .gooddetail_pinjia1 div:nth-child(1) img, .gooddetail_pinjia1 .gooddetail_footer .gooddetail_footer_1 div:nth-child(2) img, .gooddetail_footer .gooddetail_footer_1 .gooddetail_pinjia1 div:nth-child(2) img {
       width: 100%;
       height: 100%; }
   .gooddetail_pinjia1 div:nth-child(2) {
@@ -102,5 +102,40 @@
   margin-left: 0;
   border-bottom: solid 1px #cf73d8;
   line-height: 2.4rem; }
+
+.gooddetail_footer {
+  height: 3.6rem;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  align-items: center; }
+  .gooddetail_footer .gooddetail_footer_1 {
+    display: flex;
+    flex-grow: 1; }
+    .gooddetail_footer .gooddetail_footer_1 div:nth-child(1), .gooddetail_footer .gooddetail_footer_1 div:nth-child(2) {
+      background-color: #ffb3b3;
+      height: 3rem;
+      line-height: 3rem;
+      color: white;
+      width: 50%;
+      text-align: center;
+      border-top-left-radius: 40px;
+      border-bottom-left-radius: 40px; }
+    .gooddetail_footer .gooddetail_footer_1 div:nth-child(2) {
+      background-color: #cf73d8;
+      border-top-right-radius: 40px;
+      border-bottom-right-radius: 40px;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0; }
+
+.gooddetail_footer_width {
+  width: 15% !important; }
+
+.gooddetail_footer_text {
+  color: #cf73d8;
+  margin-top: 0 !important;
+  margin-bottom: 0.2rem; }
 
 /*# sourceMappingURL=gooddetail.css.map */

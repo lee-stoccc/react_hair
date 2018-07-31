@@ -18,7 +18,7 @@ class Shop_template extends React.Component {
                     <div className='s_t_5'><Btn /></div>
                     <div className='s_t_6'>
                         <div onClick={this.props.addcarenumf}><img src={this.props.iscare===true?srcimg2:srcimg} alt=""/></div>
-                        <div>关注人数:</div>
+                        <div>{this.props.shop_template_text}:</div>
                         <div className='people'>{this.props.shopcarenum}</div>
                     </div>
             </div>

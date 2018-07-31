@@ -1,0 +1,70 @@
+@mixin m($t:0,$r:0,$b:0,$l:0) {
+  margin-top: $t;
+  margin-right: $r;
+  margin-bottom: $b;
+  margin-left: $l;
+}
+
+@mixin p($t:0,$r:0,$b:0,$l:0) {
+  padding-top: $t;
+  padding-right: $r;
+  padding-bottom: $b;
+  padding-left: $l;
+}
+.shopdetail{
+.zuopin_2{
+  display: flex;
+  div{
+    flex-grow: 1;
+    text-align: center;
+    line-height: 2.6rem;
+  }
+}
+.changecolor{
+  color: #cf73d8;
+  border-bottom: 1px solid #cf73d8;
+}
+.changecolor2{
+  color: #222;
+}
+.index_1{
+  position: relative;
+  @include m($t:1rem,$b:1rem);
+  .index_yuyue{
+    width:3.4rem;
+    position: absolute;
+    top: 30px;
+    right: 2.4rem;
+    z-index: 2;
+    justify-content: center;
+    }
+  }
+  .shopname{
+    height: 5rem;
+    .index_yuyue{
+      height: 1.6rem;
+      width:3.4rem;
+      right: 2.4rem;
+      z-index: 2;
+      justify-content: center;
+    }
+    position: relative;
+    top:-2.5rem;
+    z-index: 2;
+    justify-content: space-around;
+    align-items: flex-end;
+    display: flex;
+    div:nth-child(1){
+      height: 5rem;
+      width: 5rem;
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+    div:nth-child(2){
+      line-height: 2.5rem;
+      text-align: center;
+    }
+  }
+}

@@ -1,3 +1,16 @@
+@mixin m($t:0,$r:0,$b:0,$l:0) {
+  margin-top: $t;
+  margin-right: $r;
+  margin-bottom: $b;
+  margin-left: $l;
+}
+
+@mixin p($t:0,$r:0,$b:0,$l:0) {
+  padding-top: $t;
+  padding-right: $r;
+  padding-bottom: $b;
+  padding-left: $l;
+}
 .zuopin{
   .zuopin_2{
     display: flex;
@@ -16,5 +29,13 @@
   border: 1px solid #cf73d8;
   color: white;
 }
+  .mall_goods{
+    display: flex;
+    flex-wrap: wrap;
+    @include m($t:0.8rem,$b:4.8rem);
+    >div{
+      width: 50%;
+    }
+  }
 
 }

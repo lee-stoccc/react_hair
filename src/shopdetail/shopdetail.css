@@ -1,0 +1,49 @@
+.shopdetail .zuopin_2 {
+  display: flex; }
+  .shopdetail .zuopin_2 div {
+    flex-grow: 1;
+    text-align: center;
+    line-height: 2.6rem; }
+.shopdetail .changecolor {
+  color: #cf73d8;
+  border-bottom: 1px solid #cf73d8; }
+.shopdetail .changecolor2 {
+  color: #222; }
+.shopdetail .index_1 {
+  position: relative;
+  margin-top: 1rem;
+  margin-right: 0;
+  margin-bottom: 1rem;
+  margin-left: 0; }
+  .shopdetail .index_1 .index_yuyue {
+    width: 3.4rem;
+    position: absolute;
+    top: 30px;
+    right: 2.4rem;
+    z-index: 2;
+    justify-content: center; }
+.shopdetail .shopname {
+  height: 5rem;
+  position: relative;
+  top: -2.5rem;
+  z-index: 2;
+  justify-content: space-around;
+  align-items: flex-end;
+  display: flex; }
+  .shopdetail .shopname .index_yuyue {
+    height: 1.6rem;
+    width: 3.4rem;
+    right: 2.4rem;
+    z-index: 2;
+    justify-content: center; }
+  .shopdetail .shopname div:nth-child(1) {
+    height: 5rem;
+    width: 5rem; }
+    .shopdetail .shopname div:nth-child(1) img {
+      width: 100%;
+      height: 100%; }
+  .shopdetail .shopname div:nth-child(2) {
+    line-height: 2.5rem;
+    text-align: center; }
+
+/*# sourceMappingURL=shopdetail.css.map */

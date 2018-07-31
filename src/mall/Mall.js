@@ -54,7 +54,6 @@ class Mall extends React.Component {
                                     <Goods key={key} goodname={l.goodname} goodprice={l.goodprice}
                                            // 路由跳转的路径，和携带的参数
                                            goPath={'gooddetail'} cid={l.cid} id={l.id}/>
-
                             )
                         })
                     }
