@@ -8,6 +8,10 @@ export default class Img_text extends React.Component {
         this.state={
             src:[
                 {image:require('../../staic/imgs/swiper01.jpg')},
+                {image:require('../../staic/imgs/swiper03.jpg')},
+                {image:require('../../staic/imgs/swiper04.jpg')},
+                {image:require('../../staic/imgs/swiper05.jpg')},
+                {image:require('../../staic/imgs/swiper06.jpg')},
                 {image:require('../../staic/imgs/swiper02.jpg')}
                 ]
 
@@ -17,7 +21,7 @@ export default class Img_text extends React.Component {
     render() {
         const swiperOptions = {
             preloadImages: true,
-            autoplay: 4000,
+            autoplay: 2300,
             autoplayDisableOnInteraction: false
         };
 

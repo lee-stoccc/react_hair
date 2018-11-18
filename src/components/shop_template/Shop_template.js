@@ -13,7 +13,7 @@ class Shop_template extends React.Component {
             <div className='s_t' >
                     <div className='s_t_1'></div>
                     <div className='s_t_2'></div>
-                    <div className='s_t_3'><img src={require('../../staic/imgs/2-1.png')} alt=""/></div>
+                    <div className='s_t_3'><img src={this.props.imgsrc} alt=""/></div>
                     <div className='s_t_4'> {this.props.shopname}</div>
                     <div className='s_t_5'><Btn /></div>
                     <div className='s_t_6'>

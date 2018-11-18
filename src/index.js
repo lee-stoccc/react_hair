@@ -65,7 +65,7 @@ ReactDOM.render(
             <Route path='/mall' component={Mall}  />
             <Route path='/zuopin' component={Zuopin}  />
             <Route path='/Gooddetail' component={Gooddetail}  />
-            <Route path='/Shopdetail/:id/:cid' component={Shopdetail}  />
+            <Route path='/Shopdetail/:id/:cid/:name' component={Shopdetail}  />
         </Switch>
 
     </Router>,

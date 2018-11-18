@@ -26,7 +26,8 @@
     height: 68px; }
     .s_t .s_t_3 img, .s_t .s_t_4 img {
       width: 100%;
-      height: 100%; }
+      height: 100%;
+      border-radius: 50%; }
   .s_t .s_t_4 {
     color: white;
     width: auto;
