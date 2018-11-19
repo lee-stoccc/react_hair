@@ -14,7 +14,7 @@ import Zuopin from './zuopin/Zuopin'
 import Shopdetail from './shopdetail/Shopdetail'
 import Gooddetail from './gooddetail/Gooddetail'
 
-import ST from './components/alert/Alert'
+import ST from './components/mask/Mask'
 
 
 React.Component.prototype.$axios=axios;
@@ -65,7 +65,7 @@ ReactDOM.render(
             <Route path='/mall' component={Mall}  />
             <Route path='/zuopin' component={Zuopin}  />
             <Route path='/Gooddetail' component={Gooddetail}  />
-            <Route path='/Shopdetail/:id/:cid' component={Shopdetail}  />
+            <Route path='/Shopdetail/:id/:cid/:name' component={Shopdetail}  />
         </Switch>
 
     </Router>,

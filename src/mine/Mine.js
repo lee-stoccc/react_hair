@@ -8,7 +8,7 @@ import './mine.css'
 
 class Index extends React.Component {
     state={
-        imgsrc:[require('../staic/imgs/2-1.png'),require('../staic/imgs/2-2.png')],
+        imgsrc:[require('../staic/imgs/2-1.png'),require('../staic/imgs/2-2.png'),require('../staic/imgs/2-3.png'),require('../staic/imgs/1-2.png'),require('../staic/imgs/2-5.png'),require('../staic/imgs/touxiang.jpg'),require('../staic/imgs/youjiantou.png')],
         ordstatus_0:''
     };
 
@@ -34,7 +34,7 @@ class Index extends React.Component {
         };
         return (
             <div className='mine'>
-                <div className='login_img_1'><img src={this.state.imgsrc[0]} alt=""/></div>
+                <div className='login_img_1'><img src={this.state.imgsrc[5]} alt=""/></div>
                 <div className='mine_1'>
                     <div>Type somethig</div>
                     <Buttom button='Lv6' button_1='button_1'/>
@@ -44,28 +44,28 @@ class Index extends React.Component {
                         <div className='mine_2'>
                             <div>我的订单</div>
                             <div className="mine_order_2">更多订单</div>
-                            <div  className="mine_order_2"><img src="" alt=""/>></div>
+                            <div  className="mine_order_2"><img src='' alt=""/> > </div>
                         </div>
                         <div className='mine_line'></div>
                         <div  className='mine_3'>
                             <Img_text imgtext='待付款' imgsrc={this.state.imgsrc[0]} num={this.state.ordstatus_0}/>
-                            <Img_text imgtext='待收货' imgsrc={this.state.imgsrc[0]}/>
-                            <Img_text imgtext='待发货' imgsrc={this.state.imgsrc[0]}/>
-                            <Img_text imgtext='待评价' imgsrc={this.state.imgsrc[0]}/>
-                            <Img_text imgtext='售后' imgsrc={this.state.imgsrc[0]}/>
+                            <Img_text imgtext='待收货' imgsrc={this.state.imgsrc[1]}/>
+                            <Img_text imgtext='待发货' imgsrc={this.state.imgsrc[2]}/>
+                            <Img_text imgtext='待评价' imgsrc={this.state.imgsrc[3]}/>
+                            <Img_text imgtext='售后' imgsrc={this.state.imgsrc[4]}/>
                         </div>
                     </div>
                 </div>
-                <div>
-                    <Img_text2 img_text2='我的预约' text_2='text_2'/>
+                <div className='mine_colum'>
+                    <Img_text2 img_text2='我的预约' text_2='text_2' imgsrc={this.state.imgsrc[4]}/>
                     <div className='mine_line' ></div>
-                    <Img_text2 img_text2='我的购物车' text_2='text_2'/>
+                    <Img_text2 img_text2='我的购物车' text_2='text_2' imgsrc={this.state.imgsrc[3]}/>
                     <div className='mine_line'></div>
-                    <Img_text2 img_text2='我的优惠券' text_2='text_2'/>
+                    <Img_text2 img_text2='我的优惠券' text_2='text_2' imgsrc={this.state.imgsrc[0]}/>
                     <div className='mine_line'></div>
-                    <Img_text2 img_text2='我的会员卡' text_2='text_2'/>
+                    <Img_text2 img_text2='我的会员卡' text_2='text_2' imgsrc={this.state.imgsrc[2]}/>
                     <div className='mine_line'></div>
-                    <Img_text2 img_text2='商家认证/管理' text_2='text_2'/>
+                    <Img_text2 img_text2='商家认证/管理' text_2='text_2' imgsrc={this.state.imgsrc[1]}/>
                     <div className='mine_line'></div>
                 </div>
                 <Foot ismine={true}/>

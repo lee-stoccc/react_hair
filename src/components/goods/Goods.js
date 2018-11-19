@@ -26,9 +26,10 @@ class Input extends Component {
             <div className='goods' onClick={this.props.goodDetail}>
                             {/*路由跳转路径  +  路由带参数*/}
                 <Link to={{pathname:goPaths,data:{cid:this.props.cid,id:this.props.id}}}>
-                    <div><img src={this.state.src[0]} alt=""/></div>
+                    <div className='goods_pic'><img src={this.props.imgsrc} alt=""/></div>
+
+                    <div>{this.props.goodprice}</div>
                     <div>{this.props.goodname}</div>
-                    <div>￥{this.props.goodprice}</div>
                 </Link>
             </div>
         );

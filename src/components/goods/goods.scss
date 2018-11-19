@@ -12,9 +12,23 @@
   padding-left: $l;
 }
 .goods{
-  width: 100%;
+    width: 100%;
+    height:14rem;
+    @include m($t:0.6rem,$b:0.6rem);
   text-align: center;
+    .goods_pic{
+        position:relative;
+        left:10%;
+        width:80%;
+        height:80%;
+        img{
+            width:100%;
+            height:100%;
+        }
+    }
   div:nth-child(1){
+
+
   }
   div:nth-child(2){
     font-size:0.75rem;

@@ -7,12 +7,13 @@ import Buttom from '../components/buttom/Bottom'
 import Foot from '../components/footer/Footer'
 import { BrowserRouter as Router, Route,Switch,Link} from 'react-router-dom';
 import Alert from '../components/alert/Alert'
+import Mask from '../components/mask/Mask'
 import './index.css'
 
 
 class Index extends React.Component {
     state={
-        imgsrc:[require('../staic/imgs/2-1.png'),require('../staic/imgs/2-2.png')],
+        imgsrc:[require('../staic/imgs/index_1.jpg'),require('../staic/imgs/index_2.jpg'),require('../staic/imgs/index_3.jpg'),require('../staic/imgs/index_4.jpg'),require('../staic/imgs/index_5.jpg')],
         indexInfo:{},
         shoplist:[],
         love:false,
@@ -70,12 +71,14 @@ class Index extends React.Component {
     // 激活弹框
     alertShow(event){
         event.preventDefault();
+        document.documentElement.style.overflow="hidden"
         this.setState({
             alert_show:true
         })
     }
     // 取消弹窗
     alert_cencel(){
+        document.documentElement.style.overflow=""
         this.setState({
             alert_show:false
         })
@@ -89,31 +92,60 @@ class Index extends React.Component {
                 <Search placeholder='搜一搜'/>
                 <Swiper />
                 <div className='index_chodis'>
-                    <ImgText imgtext={this.state.one} imgsrc={this.state.imgsrc[0]}/>
-                    <ImgText imgtext={this.state.two} imgsrc={this.state.imgsrc[1]} />
-                    <ImgText imgtext={this.state.three} imgsrc={this.state.imgsrc[0]} />
-                    <ImgText imgtext={this.state.four} imgsrc={this.state.imgsrc[1]}/>
+                    <ImgText imgtext={'美容'} imgsrc={this.state.imgsrc[4]}/>
+                    <ImgText imgtext={'美发'} imgsrc={this.state.imgsrc[2]} />
+                    <ImgText imgtext={'美妆'} imgsrc={this.state.imgsrc[3]} />
+                    <ImgText imgtext={'美甲'} imgsrc={this.state.imgsrc[1]}/>
+                </div>
+                <div className='index_chodis'>
+                    <ImgText imgtext={'纤体'} imgsrc={this.state.imgsrc[0]}/>
+                    <ImgText imgtext={'护肤'} imgsrc={this.state.imgsrc[4]} />
+                    <ImgText imgtext={'健康'} imgsrc={this.state.imgsrc[2]} />
+                    <ImgText imgtext={'日用'} imgsrc={this.state.imgsrc[1]}/>
                 </div>
                 <Router>
                     <Route path='/index/fot' component={Swiper}/>
                 </Router>
                 <div style={marbottom}>
-                    {
-                        this.state.shoplist.map((l,key)=>{
-                            return <Link to={`/shopdetail/${l.shopid}/${122}`}  key={key} >
-                                <div className='index_1'id={l.shopid}>
-                                    <Buttom button='预约' button_1='index_yuyue'  Buttom_func={this.alertShow.bind(this)}/>
-                                    <Shop_template shopname={l.shopname} shopcarenum={l.shopcarenum}
-                                                   iscare={l.uid===1?true:false}
-                                                   shop_template_text='关注人数'
-                                                   addcarenumf={this.addcarenum.bind(this,l.shopid,l.shopcarenum)}
-                                                  />
-                                </div>
-                            </Link>
-                        })
-                    }
+                    <Link to={`/shopdetail/1/${122}/${'杜丽莎美容'}`}  key={1} >
+                        <div className='index_1' id={1}>
+                              <Buttom button='预约' button_1='index_yuyue'  Buttom_func={this.alertShow.bind(this)}/>
+                               <Shop_template shopname={'杜丽莎美容'} shopcarenum={121}   iscare={1===1?true:false} shop_template_text='关注人数' imgsrc={this.state.imgsrc[0]}/>
+                        </div>
+                    </Link>
+
+                    <Link to={`/shopdetail/1/${122}/${'芭比之恋'}`}  key={2} >
+                        <div className='index_1' id={1}>
+                            <Buttom button='预约' button_1='index_yuyue'  Buttom_func={this.alertShow.bind(this)}/>
+                            <Shop_template shopname={'芭比之恋'} shopcarenum={421}   iscare={1===1?true:false} shop_template_text='关注人数' imgsrc={this.state.imgsrc[1]}/>
+                        </div>
+                    </Link>
+
+                    <Link to={`/shopdetail/1/${122}/${'马特美甲'}`}  key={13} >
+                        <div className='index_1' id={1}>
+                            <Buttom button='预约' button_1='index_yuyue'  Buttom_func={this.alertShow.bind(this)}/>
+                            <Shop_template shopname={'马特美甲'} shopcarenum={64}   iscare={1===1?true:false} shop_template_text='关注人数' imgsrc={this.state.imgsrc[2]}/>
+                        </div>
+                    </Link>
+
+                    <Link to={`/shopdetail/1/${122}/${'慕斯美发'}`}  key={4} >
+                        <div className='index_1' id={1}>
+                            <Buttom button='预约' button_1='index_yuyue'  Buttom_func={this.alertShow.bind(this)}/>
+                            <Shop_template shopname={'慕斯美发'} shopcarenum={21}   iscare={1===1?true:false} shop_template_text='关注人数' imgsrc={this.state.imgsrc[3]}/>
+                        </div>
+                    </Link>
+
+                    <Link to={`/shopdetail/1/${122}/${'卡夫卡'}`}  key={5} >
+                        <div className='index_1' id={1}>
+                            <Buttom button='预约' button_1='index_yuyue'  Buttom_func={this.alertShow.bind(this)}/>
+                            <Shop_template shopname={'卡夫卡'} shopcarenum={131}   iscare={1===1?true:false} shop_template_text='关注人数' imgsrc={this.state.imgsrc[4]}/>
+                        </div>
+                    </Link>
+
+
                     </div>
                 <Foot isindex={true}/>
+                <Mask maskShow={this.state.alert_show}/>
                 <Alert isShow={this.state.alert_show}
                        Alert_text={'预约'}
                        alert_text_detail={'预约当前设计师?'}

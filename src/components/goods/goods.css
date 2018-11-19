@@ -1,6 +1,19 @@
 .goods {
   width: 100%;
+  height: 14rem;
+  margin-top: 0.6rem;
+  margin-right: 0;
+  margin-bottom: 0.6rem;
+  margin-left: 0;
   text-align: center; }
+  .goods .goods_pic {
+    position: relative;
+    left: 10%;
+    width: 80%;
+    height: 80%; }
+    .goods .goods_pic img {
+      width: 100%;
+      height: 100%; }
   .goods div:nth-child(2) {
     font-size: 0.75rem;
     margin-top: 0.4rem;

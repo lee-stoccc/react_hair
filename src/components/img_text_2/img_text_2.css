@@ -1,4 +1,5 @@
 .yuyue {
+  height: 2.6rem;
   display: flex;
   align-items: center; }
   .yuyue div:nth-child(1) {

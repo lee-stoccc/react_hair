@@ -10,7 +10,8 @@ import { BrowserRouter as Router, Route,Switch,Link} from 'react-router-dom';
 
 class Mall extends React.Component {
     state={
-        imgsrc:[require('../staic/imgs/2-1.png'),require('../staic/imgs/2-2.png')],
+        imgsrc:[require('../staic/imgs/mall_1.jpg'),require('../staic/imgs/mall_2.jpg'),require('../staic/imgs/mall_3.jpg')
+            ,require('../staic/imgs/mall_4.png'),require('../staic/imgs/mall_5.png')],
         malllist:[]
     };
     componentWillMount(){
@@ -48,15 +49,13 @@ class Mall extends React.Component {
                     <div className='Login_1_2'>精品推荐</div>
                 </div>
                 <div className="mall_goods">
-                    {
-                        this.state.malllist.map((l,key)=>{
-                            return (
-                                    <Goods key={key} goodname={l.goodname} goodprice={l.goodprice}
-                                           // 路由跳转的路径，和携带的参数
-                                           goPath={'gooddetail'} cid={l.cid} id={l.id}/>
-                            )
-                        })
-                    }
+                    <Goods key={1} goodname={'百雀羚'} goodprice={'$199'} goPath={'gooddetail'} cid={1} id={1} imgsrc={this.state.imgsrc[0]}/>
+                    <Goods key={1} goodname={'兰芝（LANEIGE）'} goodprice={'$49'} goPath={'gooddetail'} cid={1} id={2} imgsrc={this.state.imgsrc[1]}/>
+                    <Goods key={1} goodname={'科颜氏（Kiehl\'s）'} goodprice={'$59'} goPath={'gooddetail'} cid={1} id={3} imgsrc={this.state.imgsrc[2]}/>
+                    <Goods key={1} goodname={'玉兰油OLAY'} goodprice={'$69'} goPath={'gooddetail'} cid={1} id={4} imgsrc={this.state.imgsrc[3]}/>
+                    <Goods key={1} goodname={'SK-II嫩肤清莹露'} goodprice={'$99'} goPath={'gooddetail'} cid={1} id={5} imgsrc={this.state.imgsrc[4]}/>
+
+
                 </div >
                 <Foot ismall={true}/>
             </div>

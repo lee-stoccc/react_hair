@@ -1,10 +1,14 @@
 .mine .login_img_1 {
   display: flex;
   justify-content: center;
-  padding-top: 2rem;
+  padding-top: 1rem;
   padding-right: 0;
   padding-bottom: 0;
   padding-left: 0; }
+  .mine .login_img_1 img {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%; }
 .mine .mine_1 {
   display: flex;
   padding-top: 0;
@@ -62,6 +66,9 @@
     .mine .mine_order .mine_2 div:nth-child(1) {
       flex-grow: 1; }
   .mine .mine_order .mine_order_2 {
-    color: #999; }
+    color: #999;
+    padding-left: 0.4rem; }
+.mine .mine_colum {
+  margin-top: 0.4rem; }
 
 /*# sourceMappingURL=mine.css.map */

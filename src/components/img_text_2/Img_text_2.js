@@ -16,7 +16,7 @@ class Input extends Component {
         Img_text_2_text.push(this.props.text_2);
         return (
             <div className='yuyue'>
-                <div><img src={this.state.src[0]} alt=""/></div>
+                <div><img src={this.props.imgsrc} alt=""/></div>
                 <div className={Img_text_2_text.join(' ')}>{this.props.img_text2}</div>
                 <div><img src={this.state.src[1]} alt=""/></div>
             </div>

@@ -17,7 +17,14 @@
   .login_img_1{
     display: flex;
     justify-content: center;
-    @include p($t:2rem);
+    @include p($t:1rem);
+
+      img{
+          width:6rem;
+          height:6rem;
+          border-radius:50%;
+      }
+
 
   }
   .mine_1{
@@ -70,6 +77,10 @@
     }
     .mine_order_2{
       color: #999;
+        padding-left:0.4rem;
     }
   }
+    .mine_colum{
+        margin-top:0.4rem;
+    }
 }
